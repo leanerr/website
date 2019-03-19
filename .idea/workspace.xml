@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fabb23d4-a265-48fa-b0d3-993add52f69d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/image/social-media.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/image/facebook-logo.png" afterPath="$PROJECT_DIR$/src/image/facebook-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Coles.js" afterPath="$PROJECT_DIR$/src/components/Coles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Features.js" afterPath="$PROJECT_DIR$/src/components/Features.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Pro.js" afterPath="$PROJECT_DIR$/src/components/Pro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ScrollUp.js" afterPath="$PROJECT_DIR$/src/components/ScrollUp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Slider.js" afterPath="$PROJECT_DIR$/src/components/Slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Wave.js" afterPath="$PROJECT_DIR$/src/components/Wave.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/nav.js" afterPath="$PROJECT_DIR$/src/components/nav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/index.css" afterPath="$PROJECT_DIR$/src/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -365,12 +353,12 @@
       <workItem from="1552557050022" duration="2105000" />
       <workItem from="1552566579498" duration="365000" />
       <workItem from="1552978196357" duration="9236000" />
-      <workItem from="1552996056202" duration="2878000" />
+      <workItem from="1552996056202" duration="3746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125625000" />
+    <option name="totallyTimeSpent" value="126493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
