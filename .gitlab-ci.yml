@@ -16,10 +16,29 @@ build-master:
   only:
     - master
 
+build-master-prod:
+  stage: build
+  script:
+    - docker build --pull -t -f prod.Dockerfile "$CI_REGISTRY_IMAGE" .
+    - docker push "$CI_REGISTRY_IMAGE"
+  only:
+    - master
+    
 build-tags:
   stage: build
   script:
     - docker build --pull -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_TAG" .
+    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_TAG"
+  only:
+    refs:
+      - tags
+    variables:
+      - $CI_COMMIT_TAG =~ /^v.*$/
+
+build-tags-prod:
+  stage: build
+  script:
+    - docker build --pull -t  -f prod.Dockerfile  "$CI_REGISTRY_IMAGE:$CI_COMMIT_TAG" .
     - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_TAG"
   only:
     refs:
