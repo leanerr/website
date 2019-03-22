@@ -16,10 +16,13 @@ build-master:
   only:
     - master
 
-build:
+build-tags:
   stage: build
   script:
-    - docker build --pull -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG" .
-    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
-  except:
-    - master
+    - docker build --pull -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_TAG" .
+    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_TAG"
+  only:
+    refs:
+      - tags
+    variables:
+      - $CI_COMMIT_TAG =~ /^v.*$/
