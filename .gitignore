@@ -8,7 +8,7 @@
 
 # production
 /build
-
+public/media
 # misc
 .DS_Store
 .env.local
