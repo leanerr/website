@@ -63,15 +63,15 @@ export default class News extends Component {
 
 
                    <Col sm={12} md={8} lg={8} style={{ backgroundColor : ''}}>
-                       <div className="box" style={{textAlign:'center'  }}>
+                       <div className="box center" style={{textAlign:'center'  }}>
                            <h1 style={{color:'#2e4e5c'}}>تمرینات کارآمد</h1>
-                           <h3 style={{color:'#2e4e5c'}}>برنامه های تمرینی ما همه روزه در اپلیکیشن به روز میشوند, مهمنیست از کجا شروع میکنید, ما به شما کمک میکنیم به اهداف خود برسید</h3> <h3 style={{color:'#2e4e5c'}}>
+                           <h3 style={{color:'#2e4e5c'}}>برنامه های تمرینی ما همه روزه در اپلیکیشن به روز میشوند, مهم نیست از کجا شروع میکنید, ما به شما کمک میکنیم به اهداف خود برسید</h3> <h3 style={{color:'#2e4e5c'}}>
                        </h3>
                        </div>
                    </Col>
                    <Col sm={12} md={4} lg={4} style={{ backgroundColor : ''}}>
                        <div style={{textAlign:'center'  , backgroundColor : ''}}>
-                           <img className="sicipic" src={require('../image/humphrey-muleba-1119283-unsplash.jpg')} style={{height:"180px" , borderRadius:"7%"}} alt="Telegram"/>
+                           <img className="sicipic" src={require('../image/flamenco-uploading.png')} style={{height:'80%' , width : '80%' ,borderRadius : '5%'}} alt="Telegram"/>
                        </div>
                    </Col>
 
@@ -102,19 +102,40 @@ export default class News extends Component {
 
                {/*</Row>*/}
                 {/*3*/}
-                < Row style={{ padding : '5%',opacity:'20%' , backgroundColor:'#f5f5f5'
+                < Row className="backColor" style={{ padding : '5%',opacity:'20%' , background: 'linear-gradient(to right , #84aab2, rgba(25, 164, 111, 0.62))'
                     , borderRadius:'4%' ,
                     borderBottom:'.1px solid #' ,
                     borderTop:'.1px solid #B4BDFF'}}>
 
                     <Col sm={12} md={8} lg={8} style={{ backgroundColor : '#'}}>
-                    <div className="box" style={{textAlign:'center', backgroundColor : '#'}}>
-                        <h1 style={{color:'#2e4e5c'}}>غذاهای سالم و شخصی</h1>
-                        <h3 style={{color:'#2e4e5c'}}> اگر تغذیه را رها کنید نتایج فوق العاده ورزش را از دست
+                    <div className=" center" style={{textAlign:'center', backgroundColor : '#'}}>
+                        <h1 style={{color:'#ffffff' }} >برنامه غذایی منحصر بفرد</h1>
+                        <h4 style={{color:'#ffffff '}}> اگر تغذیه را رها کنید نتایج فوق العاده ورزش را از دست
 
                             می دهید. برنامه های شخصی ما به شما کمک میکند تا به اهداف خود برسید ودر طول
 
                             راه از انرژی لذت ببرید
+                        </h4>
+                        {/*<h3 style={{color:'#2e4e5c'}}>مفتخریکه بتوانیم گامی رو به جلو برای جامعه تحصیل کرده کشور برداریم*/}
+                    {/*</h3>*/}
+                    </div>
+                </Col >
+                <Col sm={12} md={4} lg={4} style={{ backgroundColor : '#'}}>
+                    <div  style={{textAlign:'center' , backgroundColor : '#'}}>
+                        <img className="sicipic" src={require('./../image/d14b9d3676249c5cca60116320c18c4f.png')} style={{height:'80%' , width : '80%' ,borderRadius : '5%'}} alt="Telegram"/>
+                    </div>
+                </Col>
+                    {/* 3 */}
+               </Row>   < Row style={{ padding : '5%',opacity:'20%'
+                ,backgroundColor:'#f5f5f5'
+                    , borderRadius:'4%' ,
+                    borderBottom:'.1px solid #' ,
+                    borderTop:'.1px solid #B4BDFF'}}>
+
+                    <Col sm={12} md={8} lg={8} style={{ backgroundColor : '#'}}>
+                    <div className="box center" style={{textAlign:'center', backgroundColor : '#'}}>
+                        <h1 style={{color:'#2e4e5c'}}>آموزش های علمی و حرفه ای</h1>
+                        <h3 style={{color:'#2e4e5c'}}> با تکیه بر معتبر ترین منابع و دانش  حرفه ای ترین متخصصین ورزش و سلامت وارد دنیای حرفه ای ها خواهید شد و نتایج منطقی اما قابل تمجید خواهید گرفت
                         </h3>
                         {/*<h3 style={{color:'#2e4e5c'}}>مفتخریکه بتوانیم گامی رو به جلو برای جامعه تحصیل کرده کشور برداریم*/}
                     {/*</h3>*/}
@@ -122,7 +143,7 @@ export default class News extends Component {
                 </Col >
                 <Col sm={12} md={4} lg={4} style={{ backgroundColor : '#'}}>
                     <div style={{textAlign:'center' , backgroundColor : '#'}}>
-                        <img className="sicipic" src={require('./../image/victor-freitas-569958-unsplash.jpg')} style={{height:"180px" , borderRadius:"7%"}} alt="Telegram"/>
+                        <img className="sicipic" src={require('./../image/cherry-upgrade.png')} style={{height:'80%' , width : '80%' ,borderRadius : '5%'}} alt="Telegram"/>
                     </div>
                 </Col>
 

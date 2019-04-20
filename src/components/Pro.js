@@ -42,7 +42,7 @@ export default class Pro extends Component {
                                         غذایی و یادآوری روزانه برای نوشیدن آب بیشتر و حرکت به سمت اهداف خود.</p>
                             </div>
                             <div className="comment-box col-s-hidden">
-                                <h2 className="comment-box__title">دستورالعمل آشپزی</h2>
+                                <h2 className="comment-box__title">رژیم غذایی مناسب</h2>
                                 <hr/>
                                 <p className="comment-box__description"> خوردن موادغذایی سالم بخش مهمی از پازل سلامتی است .
                                     خوردن غذای سالم باعث میشود که بدن شما تمام ویتامین ها و مواد غذایی و معدنی

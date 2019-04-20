@@ -15,6 +15,8 @@ import Part from './components/Particles';
 import Pro from "./components/Pro";
 import Social from "./components/Social";
 import Index from "./components/ScrollUp";
+import Help from "./components/Help";
+import ConnectWithUs from "./components/ConnectWithUs";
 
 
 
@@ -24,27 +26,32 @@ class App extends Component {
     render() {
         return (
             <div >
-               < Nav />
+
+
+    <Route path="/" exact={true} component={Nav}/>
+    <Route path="/" exact={true} component={Part}/>
+    <Route path="/ConnectWithUs" exact={true} component={ConnectWithUs}/>
+    <Route path="/Help" exact={true} component={Help}/>
+    <Route path="/" exact={true} component={Coles}/>
+
+
+    <Hidden  md xs sm>     <Route path="/" exact={true} component={Features}/> </Hidden>
+
+    <Route path="/" exact={true} component={News}/>
+
+    <Hidden  md xs sm>     <Route path="/" exact={true} component={Social}/> </Hidden>
+
+    <Route path="/" exact={true} component={Pro}/>
 
 
 
-                <Part
 
-                    />
-
-                <Coles/>
-
-                <Hidden  xs sm>   <Features/></Hidden>
-                <News/>
-                <Hidden  xs sm>   <Social/></Hidden>
-
-
-                <Pro />
 
                 <Dnl/>
                     <Wave/>
-                <Index/>
+                 <Index/>
                 <Footer/>
+
 
 
             </div>

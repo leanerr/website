@@ -9,7 +9,6 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 
 
-
 export default class Nav extends Component{
     constructor() {
         super();
@@ -47,7 +46,7 @@ export default class Nav extends Component{
         return(
 
             <div>
-                <div >
+                <div className="backColor" >
 
                     <ReactDrawer
                         open={this.state.open}
@@ -55,22 +54,25 @@ export default class Nav extends Component{
                         onClose={this.onDrawerClose}
                         noOverlay={this.state.noOverlay}>
                         <i onClick={this.closeDrawer} className="icono-cross"></i>
-                        <div  className='navigationResponsive'  >
+                        <div  className='navigationResponsive backColor'  >
 
                             <Scrollchor style={{paddingRight:30, paddingTop : 20}}   to="#Dwnl" ><span onClick={()=>{this.toggleDrawer()}}>دانلود</span></Scrollchor>
                             <Scrollchor style={{paddingRight:30, paddingTop : 20}}   to="#What people say" ><span onClick={()=>{this.toggleDrawer()}}>  مشاهدات</span></Scrollchor>
                             <Scrollchor style={{paddingRight:30,paddingTop : 20}}  to="#Screenshots" ><span onClick={()=>{this.toggleDrawer()}}>  تصاویر</span> </Scrollchor>
                             <Scrollchor style={{paddingRight:30,paddingTop : 20}}  to="#features" ><span onClick={()=>{this.toggleDrawer()}}> ویژگیها</span></Scrollchor>
                             <Scrollchor style={{paddingRight:30,paddingTop : 20}}  to="#Home"><span onClick={()=>{this.toggleDrawer()}}>  خانه</span></Scrollchor>
+                            {/*<Scrollchor style={{paddingRight:30,paddingTop : 20}}  to="#Home"><span onClick={()=>{this.toggleDrawer()}}>  تماس با ما</span></Scrollchor>*/}
+                            <a href="/connectWithUs"  className='rang hbtn hb-border-top-br3 hpad4 hbor4 hpill'>تماس با ما </a>
+                            <a href="/Help"  className='rang hbtn hb-border-top-br3 hpad4 hbor4 hpill'>آموزش ها </a>
                         </div>
                     </ReactDrawer>
 
                     {/*desktop*/}
                     <Hidden  xs sm>
-                        <div  className=' navigation' >
+                        <div  className=' navigation navColor'  >
 
                                 <div className='nav__right'>
-                        <li><Scrollchor   to="#Dwnl"  >دانلود</Scrollchor></li>
+              <li><Scrollchor   to="#Dwnl"  className='rang hbtn hb-border-top-br3 hpad4 hbor4 hpill'  >دانلود</Scrollchor></li>
                          <li> <Scrollchor to="#What people say"  >مشاهدات</Scrollchor></li>
                            <li> <Scrollchor  to="#Screenshots" >تصاویر </Scrollchor></li>
                                 </div>
@@ -78,6 +80,9 @@ export default class Nav extends Component{
                                 <div className='nav__left'>
                                     <li><Scrollchor  to="#features" >ویژگیها</Scrollchor></li>
                                     <li><Scrollchor  to="#Home" >خانه</Scrollchor></li>
+                                    <li><a href="/connectWithUs"  className='rang hbtn hb-border-top-br3 hpad4 hbor4 hpill'>تماس با ما </a></li>
+                                    <li><a href="/Help"  className='rang hbtn hb-border-top-br3 hpad4 hbor4 hpill'>آموزش ها </a></li>
+
                                 </div>
 
                             {/*<div >*/}

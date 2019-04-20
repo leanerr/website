@@ -5,8 +5,9 @@ body {
   font-size: 18px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
-  background: #84aab2;
   line-height: 1.4rem;
+  overflow-x: hidden;
+
 }
 h1,
 h2,
@@ -14,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Vazir" ,"Gibson", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #dfdbff;
 }
 h2 {
@@ -78,7 +79,7 @@ code {
 }
 .page-features {
   width: 100%;
-  background: hsl(209, 100%, 10%);
+  /*background: hsl(209, 100%, 10%);*/
   overflow: scroll;
 }
 .menu-button {
