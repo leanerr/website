@@ -9,7 +9,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 export default class Part extends Component{
     render(){
         return(
-            <div className='backColor' style={{  }} >
+            <div className='backColor' style={{ width: '100%' }} >
                    <div style={{ height: '18vh' }}>
                      <Particles
                       params={{

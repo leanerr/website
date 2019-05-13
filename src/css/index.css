@@ -54,6 +54,9 @@ a{
     background: linear-gradient(-225deg , #16edb3, rgba(20, 55, 90, 0.62)) !important;
 
 }
+.font {
+    color: #325a69 !important; ;
+}
 
 .backColor{
   /*background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);*/
@@ -466,6 +469,9 @@ p{
 .hpill {
   border-radius: 50px;
 }
+.radius {
+  border-radius: 25px;
+}
 
 
 .hpad2 {
@@ -623,6 +629,19 @@ p{
     border: 2px solid rgb(255, 255, 255);
     text-decoration: none;
     color: rgb(255, 255, 255);
+    white-space: nowrap;
+    z-index: 0;
+}.hbtn1 {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    border: 2px solid rgb(22, 237, 179);
+    text-decoration: none;
+    color: rgb(37, 207, 237);
     white-space: nowrap;
     z-index: 0;
 }

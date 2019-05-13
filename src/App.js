@@ -17,6 +17,9 @@ import Social from "./components/Social";
 import Index from "./components/ScrollUp";
 import Help from "./components/Help";
 import ConnectWithUs from "./components/ConnectWithUs";
+import Slider from "./components/Slider";
+import Success from "./components/Success";
+import NoSuccess from "./components/NoSuccess";
 
 
 
@@ -32,25 +35,30 @@ class App extends Component {
     <Route path="/" exact={true} component={Part}/>
     <Route path="/ConnectWithUs" exact={true} component={ConnectWithUs}/>
     <Route path="/Help" exact={true} component={Help}/>
+
     <Route path="/" exact={true} component={Coles}/>
 
 
     <Hidden  md xs sm>     <Route path="/" exact={true} component={Features}/> </Hidden>
 
     <Route path="/" exact={true} component={News}/>
+                <Route path="/" exact={true} component={Slider}/>
 
     <Hidden  md xs sm>     <Route path="/" exact={true} component={Social}/> </Hidden>
 
     <Route path="/" exact={true} component={Pro}/>
+                <Route path="/" exact={true} component={Dnl}/>
+                <Route path="/" exact={true} component={Wave}/>
+                <Route path="/" exact={true} component={Index}/>
+                <Route path="/" exact={true} component={Footer}/>
 
 
 
 
-
-                <Dnl/>
-                    <Wave/>
-                 <Index/>
-                <Footer/>
+                {/*<Dnl/>*/}
+                    {/*<Wave/>*/}
+                 {/*<Index/>*/}
+                {/*<Footer/>*/}
 
 
 

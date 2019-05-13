@@ -3,6 +3,10 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Scrollchor from 'react-scrollchor';
 import Particles from 'react-particles-js';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import Footer from "./Footer";
+import Index from "./ScrollUp";
+import Wave from "./Wave";
+import Dnl from "./Dnl";
 
 
 export default class ConnectWithUs extends Component{
@@ -111,6 +115,10 @@ export default class ConnectWithUs extends Component{
                 </div>
 
             </div>
+            <Dnl/>
+            <Wave/>
+            <Index/>
+            <Footer/>
 
         </div>)
     }

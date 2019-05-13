@@ -57,8 +57,8 @@ export default class Nav extends Component{
                         <div  className='navigationResponsive backColor'  >
 
                             <Scrollchor style={{paddingRight:30, paddingTop : 20}}   to="#Dwnl" ><span onClick={()=>{this.toggleDrawer()}}>دانلود</span></Scrollchor>
-                            <Scrollchor style={{paddingRight:30, paddingTop : 20}}   to="#What people say" ><span onClick={()=>{this.toggleDrawer()}}>  مشاهدات</span></Scrollchor>
-                            <Scrollchor style={{paddingRight:30,paddingTop : 20}}  to="#Screenshots" ><span onClick={()=>{this.toggleDrawer()}}>  تصاویر</span> </Scrollchor>
+                            <Scrollchor style={{paddingRight:30, paddingTop : 20}}   to="#What people say" ><span onClick={()=>{this.toggleDrawer()}}>  تصاویر</span></Scrollchor>
+                            {/*<Scrollchor style={{paddingRight:30,paddingTop : 20}}  to="#Screenshots" ><span onClick={()=>{this.toggleDrawer()}}>  تصاویر</span> </Scrollchor>*/}
                             <Scrollchor style={{paddingRight:30,paddingTop : 20}}  to="#features" ><span onClick={()=>{this.toggleDrawer()}}> ویژگیها</span></Scrollchor>
                             <Scrollchor style={{paddingRight:30,paddingTop : 20}}  to="#Home"><span onClick={()=>{this.toggleDrawer()}}>  خانه</span></Scrollchor>
                             {/*<Scrollchor style={{paddingRight:30,paddingTop : 20}}  to="#Home"><span onClick={()=>{this.toggleDrawer()}}>  تماس با ما</span></Scrollchor>*/}
@@ -73,21 +73,21 @@ export default class Nav extends Component{
 
                                 <div className='nav__right'>
               <li><Scrollchor   to="#Dwnl"  className='rang hbtn hb-border-top-br3 hpad4 hbor4 hpill'  >دانلود</Scrollchor></li>
-                         <li> <Scrollchor to="#What people say"  >مشاهدات</Scrollchor></li>
-                           <li> <Scrollchor  to="#Screenshots" >تصاویر </Scrollchor></li>
+                         <li> <Scrollchor to="#What people say"  >تصاویر</Scrollchor></li>
+                           {/*<li> <Scrollchor  to="#Screenshots" >تصاویر </Scrollchor></li>*/}
                                 </div>
 
                                 <div className='nav__left'>
                                     <li><Scrollchor  to="#features" >ویژگیها</Scrollchor></li>
-                                    <li><Scrollchor  to="#Home" >خانه</Scrollchor></li>
+                                    {/*<li><Scrollchor  to="#Home" >خانه</Scrollchor></li>*/}
                                     <li><a href="/connectWithUs"  className='rang hbtn hb-border-top-br3 hpad4 hbor4 hpill'>تماس با ما </a></li>
                                     <li><a href="/Help"  className='rang hbtn hb-border-top-br3 hpad4 hbor4 hpill'>آموزش ها </a></li>
 
                                 </div>
 
-                            {/*<div >*/}
-                                {/*<img src={require('./../image/logo.png')} alt=""/>*/}
-                            {/*</div>*/}
+                            <div style={{paddingRight: '40%'}}>
+                                <img className='radius' src={require('./../image/photo1752615152809781221.jpg')} style={{width:'25%', borderRadius:'2% !important'}} alt=""/>
+                            </div>
                         </div>
                     </Hidden>
 

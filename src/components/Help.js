@@ -3,6 +3,10 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Scrollchor from 'react-scrollchor';
 import Particles from 'react-particles-js';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import Dnl from "./Dnl";
+import Wave from "./Wave";
+import Index from "./ScrollUp";
+import Footer from "./Footer";
 
 
 export default class Help extends Component{
@@ -104,7 +108,10 @@ export default class Help extends Component{
                 </div>
 
             </div>
-
+            <Dnl/>
+            <Wave/>
+            <Index/>
+            <Footer/>
         </div>)
     }
 
