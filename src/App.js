@@ -20,6 +20,7 @@ import ConnectWithUs from "./components/ConnectWithUs";
 import Slider from "./components/Slider";
 import Success from "./components/Success";
 import NoSuccess from "./components/NoSuccess";
+import SliderXs from "./components/SliderXs";
 
 
 
@@ -42,7 +43,8 @@ class App extends Component {
     <Hidden  md xs sm>     <Route path="/" exact={true} component={Features}/> </Hidden>
 
     <Route path="/" exact={true} component={News}/>
-                <Route path="/" exact={true} component={Slider}/>
+                <Hidden  md xs sm>  <Route path="/" exact={true} component={Slider}/></Hidden>
+                <Hidden  lg xl> <Route path="/" exact={true} component={SliderXs}/></Hidden>
 
     <Hidden  md xs sm>     <Route path="/" exact={true} component={Social}/> </Hidden>
 

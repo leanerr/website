@@ -46,14 +46,14 @@ export default class Slider extends Component {
                     >
 
                             <Slide className="Demo-swiper__slide" >
-                                <img src={require('./images/screen1.jpg')} style={{width:'27%',padding:'5px'}} />
+                                <img src={require('./images/screen1.jpg')} style={{width:'27%',paddingTop:'30px'}} />
 
                             </Slide> <Slide className="Demo-swiper__slide" >
-                                <img src={require('./images/screen2.jpg')} style={{width:'27%',padding:'5px'}} />
+                                <img src={require('./images/screen2.jpg')} style={{width:'27%',paddingTop:'30px'}} />
 
                             </Slide>
                         <Slide className="Demo-swiper__slide" >
-                                <img src={require('./images/screen3.jpg')} style={{width:'27%',padding:'5px'}} />
+                                <img src={require('./images/screen3.jpg')} style={{width:'27%',paddingTop:'30px'}} />
 
                             </Slide>
 

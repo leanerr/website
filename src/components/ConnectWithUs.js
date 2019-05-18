@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import Index from "./ScrollUp";
 import Wave from "./Wave";
 import Dnl from "./Dnl";
+import {Hidden,Visible} from 'react-grid-system';
 
 
 export default class ConnectWithUs extends Component{
@@ -15,6 +16,7 @@ export default class ConnectWithUs extends Component{
         return(<div style={{padding:0,margin:0}}>
                 {/*nav*/}
 
+            <Hidden  xs sm>
                 <div  className=' navigation navColor'  >
 
                     <div className='nav__right '>
@@ -24,11 +26,22 @@ export default class ConnectWithUs extends Component{
 
                     <div className='nav__left'>
                         <li>   <Link className="rang hbtn hb-border-top-br3 hpad4 hbor4 hpill " to={`/`}>صفحه اصلی</Link></li>
-                        <li>   <Link className="rang hbtn hb-border-top-br3 hpad4 hbor4 hpill " to={`/Help`}>آموزش ها   </Link></li>
+                        <li>   <Link className="rang hbtn hb-border-top-br3 hpad4 hbor4 hpill " to={`/Help`}>آموزش ها</Link></li>
 
 
                     </div>
                 </div>
+            </Hidden>
+
+            <Visible xs sm>
+                <div  className=' navigation navColor' style={{ paddingLeft:'9% !important'}}  >
+                    <div className='nav__left'>
+                        <li>   <Link className="rang hbtn hb-border-top-br3 hpad4 hbor4 hpill " to={`/`}>صفحه اصلی</Link></li>
+                        <li>   <Link className="rang hbtn hb-border-top-br3 hpad4 hbor4 hpill " to={`/Help`}>آموزش ها</Link></li>
+
+                    </div>
+                </div>
+            </Visible>
             {/*particles*/}
             <div className='backColor'>
                 <div  style={{height: '18vh' , width:'75%',paddingRight:'10%',paddingLeft:'10%'}}>

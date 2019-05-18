@@ -68,7 +68,7 @@ export default class Nav extends Component{
                     </ReactDrawer>
 
                     {/*desktop*/}
-                    <Hidden  xs sm>
+                    <Visible  md lg xl>
                         <div  className=' navigation navColor'  >
 
                                 <div className='nav__right'>
@@ -85,11 +85,11 @@ export default class Nav extends Component{
 
                                 </div>
 
-                            <div style={{paddingRight: '40%'}}>
-                                <img className='radius' src={require('./../image/photo1752615152809781221.jpg')} style={{width:'25%', borderRadius:'2% !important'}} alt=""/>
+                            <div style={{paddingRight: '45%'}}>
+                                <img className='radius' src={require('./../image/photo1752615152809781221.jpg')} style={{width:'28%', borderRadius:'4% !important'}} alt=""/>
                             </div>
                         </div>
-                    </Hidden>
+                    </Visible>
 
                     {/*phone*/}
                     <Visible xs sm>

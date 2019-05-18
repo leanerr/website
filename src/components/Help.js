@@ -7,6 +7,8 @@ import Dnl from "./Dnl";
 import Wave from "./Wave";
 import Index from "./ScrollUp";
 import Footer from "./Footer";
+import {Hidden,Visible} from 'react-grid-system';
+
 
 
 export default class Help extends Component{
@@ -14,7 +16,7 @@ export default class Help extends Component{
     {
         return(<div style={{padding:0,margin:0}}>
             {/*nav*/}
-
+            <Hidden  xs sm>
             <div  className=' navigation navColor'  >
 
                 <div className='nav__right '>
@@ -29,6 +31,17 @@ export default class Help extends Component{
 
                 </div>
             </div>
+            </Hidden>
+
+            <Visible xs sm>
+                <div  className=' navigation navColor' style={{ paddingLeft:'9% !important'}}  >
+                <div className='nav__left'>
+                    <li>   <Link className="rang hbtn hb-border-top-br3 hpad4 hbor4 hpill " to={`/`}>صفحه اصلی</Link></li>
+                    <li>   <Link className="rang hbtn hb-border-top-br3 hpad4 hbor4 hpill " to={`/ConnectWithUS`}>تماس با ما</Link></li>
+
+                </div>
+                </div>
+            </Visible>
             {/*particles*/}
             <div className='backColor'>
                 <div  style={{height: '18vh' , width:'75%',paddingRight:'10%',paddingLeft:'10%'}}>
