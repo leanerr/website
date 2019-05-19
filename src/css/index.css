@@ -89,9 +89,12 @@ p{
 }
 .navigationResponsive {
   display:flex;
+    z-index:120%;
+    overflow: hidden;
+    opacity:150%;
   flex-direction:column;
   justify-content:space-between;
-  background: linear-gradient(to right , #5789a5, rgba(25, 164, 111, 0.62)) !important;
+    background: linear-gradient(90deg, rgb(22, 237, 179), rgb(20, 55, 90))!important;
 
 }
 .navigationResponsive a{
@@ -109,6 +112,15 @@ p{
   /*justify-content: space-between;*/
   padding-right: 5%;
 }
+.navigationXS {
+  display: flex;
+
+  padding: .7%;
+  z-index: 99;
+    font-size: 16px !important;
+  width: 100%;
+  /*justify-content: space-between;*/
+}
 
 
 .navigation .logo {
@@ -121,7 +133,16 @@ p{
 
   font-size: larger;
  }
+.navigationXS a  {
+   color:white;
+  font-size: larger;
+ }
 .navigation span  {
+   color:white;
+  font-size: larger;
+  text-decoration: none;
+ }
+.navigationXS span  {
    color:white;
   font-size: larger;
   text-decoration: none;
@@ -130,12 +151,22 @@ p{
 .navigation a:hover {
   opacity: .8;
 }
+.navigationXS a:hover {
+  opacity: .8;
+}
 
 .navigation .nav__right , .navigation .nav__left {
   display: flex;
 }
+.navigationXS .nav__right , .navigationXS .nav__left {
+  display: flex;
+}
 
 .navigation .nav__right li , .navigation .nav__left li {
+  list-style: none;
+  padding: 12px 20px;
+}
+.navigationXS .nav__right li , .navigationXS .nav__left li {
   list-style: none;
   padding: 12px 20px;
 }

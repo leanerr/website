@@ -34,7 +34,7 @@ export default class ConnectWithUs extends Component{
             </Hidden>
 
             <Visible xs sm>
-                <div  className=' navigation navColor' style={{ paddingLeft:'9% !important'}}  >
+                <div  className=' navigationXS backColor' style={{ paddingLeft:'9% !important'}}  >
                     <div className='nav__left'>
                         <li>   <Link className="rang hbtn hb-border-top-br3 hpad4 hbor4 hpill " to={`/`}>صفحه اصلی</Link></li>
                         <li>   <Link className="rang hbtn hb-border-top-br3 hpad4 hbor4 hpill " to={`/Help`}>آموزش ها</Link></li>

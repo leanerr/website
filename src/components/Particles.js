@@ -10,7 +10,24 @@ export default class Part extends Component{
     render(){
         return(
             <div className='backColor' style={{ width: '100%' }} >
-                   <div style={{ height: '18vh' }}>
+                {/*newPHONE*/}
+                {/*<Visible xs sm>*/}
+                    {/*<div  className=' navigationXS navColor' >*/}
+
+
+
+                        {/*<div className='nav__left'>*/}
+
+                            {/*<li><a href="/connectWithUs"  className='rang hbtn hb-border-top-br3 hpad4 hbor4 hpill'>تماس با ما </a></li>*/}
+                            {/*<li><a href="/Help"  className='rang hbtn hb-border-top-br3 hpad4 hbor4 hpill'>آموزش ها </a></li>*/}
+
+                        {/*</div>*/}
+
+
+                    {/*</div>*/}
+                {/*</Visible>*/}
+                {/*newPhone*/}
+                   <div style={{ height: '18vh' , paddingBottom:''}}>
                      <Particles
                       params={{
                           "particles": {
