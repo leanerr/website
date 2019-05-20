@@ -6,6 +6,7 @@ import { BrowserRouter,HashRouter, Route, Link } from 'react-router-dom'
 
 
 ReactDOM.render( <BrowserRouter>
+
     <App />
-</BrowserRouter>, document.getElementById('root'));
+</BrowserRouter>,  document.getElementById('root'));
 

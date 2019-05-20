@@ -21,6 +21,7 @@ import Slider from "./components/Slider";
 import Success from "./components/Success";
 import NoSuccess from "./components/NoSuccess";
 import SliderXs from "./components/SliderXs";
+import navbar from "./components/navbar";
 
 
 
