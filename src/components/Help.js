@@ -8,6 +8,7 @@ import Wave from "./Wave";
 import Index from "./ScrollUp";
 import Footer from "./Footer";
 import {Hidden,Visible} from 'react-grid-system';
+import Articles from "./Articles";
 
 
 
@@ -66,7 +67,7 @@ export default class Help extends Component{
                         }} />
                 </div>
                 {/*head*/}
-                <div style={{height:'auto' ,paddingBottom:'5%'}}>
+                <div style={{height:'auto' ,paddingBottom:'%'}}>
                     <Grid fluid>
                         <Row>
                             <Col  sm={12} md={12} lg={12}> <div className="title " style={{paddingTop:'%'}}>    <h1> FitEx</h1>
@@ -76,7 +77,7 @@ export default class Help extends Component{
                             </div></Col>
                             <Col sm={12} md={12} lg={12}> <div className="title">  <img className=" "  src={require('./../image/video-camera.png')} style={{height:'20%' , width : '10%'}}  alt=""/>  </div></Col>
 
-                            <Col sm={12} md={12} lg={12}> <div className="title paddingTop paddingBottom"> <a  href="#" >
+                            <Col sm={12} md={12} lg={12}> <div className="centerText paddingTop paddingBottom"> <a  href="#" >
                                 <Scrollchor   to="#Links"  className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " >مشاهده آموزش ها</Scrollchor>
                                 {/*<Scrollchor  to="#Dwnl" ><img className=" paddingTop paddingBottom "  src={require('./../image/downloadx.png')} style={{height:"60px" , width : '170px' }} alt=""/></Scrollchor>*/}
                             </a></div></Col>
@@ -94,7 +95,7 @@ export default class Help extends Component{
                     <Grid fluid>
                         <Row>
                             <Col sm={6} md={6} lg={6}> <div className=" paddingTop paddingBottom "   >
-                                <div className='backColor2' style={{padding:'2%'}}>
+                                <div className='backColor2' style={{padding:'3%'}}>
                                     <div><img src={require('./../image/tamrin/photo5882186372092113047.jpg')} style={{height:'90%' , width : '100%' , borderRadiius:'2%'}} alt="دانلود از کافه بازار "/></div>
                                 </div>
                             </div></Col>
@@ -121,6 +122,7 @@ export default class Help extends Component{
                 </div>
 
             </div>
+            <Articles/>
             <Dnl/>
             <Wave/>
             <Index/>

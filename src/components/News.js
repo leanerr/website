@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Particles from 'react-particles-js';
-import {Row,Col,Hidden,Visible} from 'react-grid-system';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import '../css/flexboxgrid.css';
 
@@ -56,7 +57,14 @@ export default class News extends Component {
                 {/*</div>*/}
                 {/*</Hidden>*/}
         <div style={{paddingLeft:'12%',paddingRight:'12%'}}>
-            < Row style={{ padding : '5%',opacity:'20%' ,backgroundColor:''
+            <Grid fluit>
+                <ScrollAnimation animateIn=''
+                                 initiallyVisible={true}
+                                 animateOnce={false}
+                                 delay={400}
+                                 animationInDuration={400}>
+
+                < Row style={{ padding : '5%',opacity:'20%' ,backgroundColor:''
                 , borderRadius:'4%' ,
                 borderBottom:'.1px solid #B4BDFF' ,
                 borderTop:'.1px solid #'}}>
@@ -79,6 +87,8 @@ export default class News extends Component {
 
 
             </Row>
+                </ScrollAnimation>
+            </Grid>
             {/*/!*2*!/*/}
             {/*< Row style={{ padding : '5%',opacity:'20%' , backgroundColor:'#f5f5f5'*/}
             {/*, borderRadius:'4%' ,*/}
@@ -103,6 +113,12 @@ export default class News extends Component {
 
             {/*</Row>*/}
             {/*3*/}
+            <Grid fluit>
+                <ScrollAnimation animateIn='tada'
+                                 initiallyVisible={true}
+                                 animateOnce={true}
+                                 delay={800}
+                                 animationInDuration={400}>
             < Row className="backColor" style={{ padding : '5%',opacity:'20%' , background: 'linear-gradient(to right , #84aab2, rgba(25, 164, 111, 0.62))'
                 , borderRadius:'4%' ,
                 borderBottom:'.1px solid #' ,
@@ -123,11 +139,20 @@ export default class News extends Component {
                 </Col >
                 <Col sm={12} md={4} lg={4} style={{ backgroundColor : '#'}}>
                     <div  style={{textAlign:'center' , backgroundColor : '#'}}>
-                        <img className="sicipic" src={require('./../image/d14b9d3676249c5cca60116320c18c4f.png')} style={{height:'80%' , width : '80%' ,borderRadius : '5%'}} alt="Telegram"/>
+                        <img className="sicipic" src={require('./../image/d14b9d3676249c5cca60116320c18c4f.png')} style={{height:'80%' , width : '80%' ,borderRadius : '15% !important'}} alt="Telegram"/>
                     </div>
                 </Col>
                 {/* 3 */}
-            </Row>   < Row style={{ padding : '5%',opacity:'20%'
+            </Row>
+                </ScrollAnimation>
+            </Grid>
+            <Grid fluit>
+                <ScrollAnimation animateIn=''
+                                 initiallyVisible={true}
+                                 animateOnce={true}
+                                 delay={400}
+                                 animationInDuration={400}>
+                < Row style={{ padding : '5%',opacity:'20%'
             ,backgroundColor:'#f5f5f5'
             , borderRadius:'4%' ,
             borderBottom:'.1px solid #' ,
@@ -149,6 +174,8 @@ export default class News extends Component {
             </Col>
 
         </Row>
+                </ScrollAnimation>
+            </Grid>
         </div>
             </div>
         )

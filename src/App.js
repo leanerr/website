@@ -22,6 +22,10 @@ import Success from "./components/Success";
 import NoSuccess from "./components/NoSuccess";
 import SliderXs from "./components/SliderXs";
 import navbar from "./components/navbar";
+import Articles from "./components/Articles";
+import Article1 from "./components/Articles/Article1";
+import Article2 from "./components/Articles/Article2";
+import Article3 from "./components/Articles/Article3";
 
 
 
@@ -36,6 +40,9 @@ class App extends Component {
     <Route path="/" exact={true} component={Nav}/>
     <Route path="/" exact={true} component={Part}/>
     <Route path="/ConnectWithUs" exact={true} component={ConnectWithUs}/>
+    <Route path="/Article1" exact={true} component={Article1}/>
+    <Route path="/Article2" exact={true} component={Article2}/>
+    <Route path="/Article3" exact={true} component={Article3}/>
     <Route path="/Help" exact={true} component={Help}/>
 
     <Route path="/" exact={true} component={Coles}/>
@@ -50,10 +57,12 @@ class App extends Component {
     <Hidden  md xs sm>     <Route path="/" exact={true} component={Social}/> </Hidden>
 
     <Route path="/" exact={true} component={Pro}/>
+    <Route path="/" exact={true} component={Articles}/>
                 <Route path="/" exact={true} component={Dnl}/>
                 <Route path="/" exact={true} component={Wave}/>
                 <Route path="/" exact={true} component={Index}/>
                 <Route path="/" exact={true} component={Footer}/>
+
 
 
 

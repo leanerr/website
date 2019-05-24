@@ -25,7 +25,7 @@ export default class ConnectWithUs extends Component{
                     </div>
 
                     <div className='nav__left'>
-                        <li>   <Link className="rang hbtn hb-border-top-br3 hpad4 hbor4 hpill " to={`/`}>صفحه اصلی</Link></li>
+                        <li>   <Link className=" rang hbtn hb-border-top-br3 hpad4 hbor4 hpill " to={`/`}>صفحه اصلی</Link></li>
                         <li>   <Link className="rang hbtn hb-border-top-br3 hpad4 hbor4 hpill " to={`/Help`}>آموزش ها</Link></li>
 
 
@@ -66,7 +66,7 @@ export default class ConnectWithUs extends Component{
                         }} />
                 </div>
                 {/*head*/}
-                <div style={{height:'auto' ,paddingBottom:'5%'}}>
+                <div style={{height:'auto' ,paddingBottom:'3%'}}>
                     <Grid fluid>
                         <Row>
                             <Col  sm={12} md={12} lg={12}> <div className="title " style={{paddingTop:'%'}}>    <h1> FitEx</h1>
@@ -75,14 +75,16 @@ export default class ConnectWithUs extends Component{
 
                             </div></Col>
                             <Col sm={12} md={12} lg={12}> <div className="title">  <img className=" "  src={require('./../image/team.png')} style={{height:'20%' , width : '10%'}}  alt=""/>  </div></Col>
-                            <Col sm={12} md={4} lg={4}> <div className="title paddiingTop paddingBottom"> <a  href="#" >
+                            <Col sm={12} md={4} lg={4}> <div className="centerText paddiingTop paddingBottom"> <a  href="#" >
                                 <Scrollchor   to="#Links"  className="hbtn hb-fill-left-br hpad2 hbor4 hpill" >از طریق تلگرام</Scrollchor>
                                 {/*<Scrollchor  to="#Dwnl" ><img className=" paddingTop paddingBottom "  src={require('./../image/downloadx.png')} style={{height:"60px" , width : '170px' }} alt=""/></Scrollchor>*/}
                             </a></div></Col>
-                            <Col sm={12} md={4} lg={4}> <div className="title paddingTop paddingBottom"> <a  href="#" >
+                            <Col sm={12} md={4} lg={4}> <div className="centerText paddingTop paddingBottom"> <a  href="#" >
                                 <Scrollchor   to="#Links"  className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " >ویدیو های ما در آپارات</Scrollchor>
                                 {/*<Scrollchor  to="#Dwnl" ><img className=" paddingTop paddingBottom "  src={require('./../image/downloadx.png')} style={{height:"60px" , width : '170px' }} alt=""/></Scrollchor>*/}
-                            </a></div></Col> <Col sm={12} md={4} lg={4}> <div className="title paddingTop paddingBottom"> <a  href="#" >
+                            </a></div>
+                            </Col>
+                            <Col sm={12} md={4} lg={4}> <div className="centerText paddingTop paddingBottom"> <a  href="#" >
                                 <Scrollchor   to="#Links"  className="hbtn hb-fill-right-br hpad2 hbor4 hpill" >از طریق اینستاگرام</Scrollchor>
                                 {/*<Scrollchor  to="#Dwnl" ><img className=" paddingTop paddingBottom "  src={require('./../image/downloadx.png')} style={{height:"60px" , width : '170px' }} alt=""/></Scrollchor>*/}
                             </a></div></Col>

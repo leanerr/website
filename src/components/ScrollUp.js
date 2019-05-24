@@ -5,7 +5,10 @@ export default class Index extends React.Component {
     render() {
         return (
             <div>
-                <ScrollUpButton />
+                <ScrollUpButton     ContainerClassName="ScrollUpButton__Container" TransitionClassName="ScrollUpButton__Toggled"
+                                    AnimationDuration={1000}>
+                    <img src={require('./../image/up-btn.svg')} style={{width:'',paddingTop:''}}/>
+                </ScrollUpButton>
             </div>
         );
     }

@@ -11,7 +11,7 @@ export default class Coles extends Component{
                     {/*<h3 style={{color:'#121212 ' }}>اگر به دنبال جایی هستید تا کلی ویدیو جذاب و باکیفیت رایگان ببینید،دوستان جدید پیدا کنید و لحظات شیرین و جذاب زندگیتون رو در قالب ویدیو و داستان با اونا شریک بشید، در اپلیکیشن کلیپیکس با ما همراه باشید</h3>*/}
                 {/*</div>*/}
                 <Grid fluit>
-                    <Row className='colesRow'>
+                        <Row className='colesRow'>
                         <Col className="" sm={12} md={4} lg={4}>
                             <div>
                                 <img className="colpic"  src={require('./../image/undraw_about_me_wa29.png')} alt="hi"/>
@@ -20,7 +20,7 @@ export default class Coles extends Component{
                                 <p> هر روز با یک  برنامه ورزشی متفاوت و متنوع با توجه به سطح ورزشی شما</p>
                             </div>
                         </Col>
-                        <Col className="right" sm={12} md={4} lg={4}>
+                            <Col className="right" sm={12} md={4} lg={4}>
                             <div>
                                 <img className="colpic" src={require('./../image/undraw_healthy_habit_bh5w.png')} alt="hs"/>
                                 <h3>مقاله های تغذیه و ورزش</h3>
@@ -29,6 +29,7 @@ export default class Coles extends Component{
                                 <p>علم به روز ورزش و تغذیه رو دنبال کنید</p>
                             </div>
                         </Col>
+
                         <Col className="left" sm={12} md={4} lg={4}>
                             <div>
                                 <img className="colpic" src={require('./../image/undraw_profile_6l1l.png')} alt="s"/>

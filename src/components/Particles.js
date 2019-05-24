@@ -3,6 +3,7 @@ import Particles from 'react-particles-js';
 import {Hidden,Visible} from 'react-grid-system';
 import Scrollchor from 'react-scrollchor';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 
@@ -27,7 +28,7 @@ export default class Part extends Component{
                     {/*</div>*/}
                 {/*</Visible>*/}
                 {/*newPhone*/}
-                   <div style={{ height: '18vh' , paddingBottom:''}}>
+                   <div style={{ height: '18vh' , paddingBottom:'1%'}}>
                      <Particles
                       params={{
                           "particles": {
@@ -54,16 +55,25 @@ export default class Part extends Component{
                     <Grid fluid>
                         <Row>
                             <Col  sm={12} md={12} lg={12}> <div className="title " style={{paddingTop:'-%'}}>    <h1 style={{}}> FitEx</h1>
-                                <h3 className="white"> بدون محدودیت ورزش کنید</h3>
+                               <h3 className="white"> بدون محدودیت ورزش کنید</h3>
                                 <Hidden md xs sm> <h4 className="white "> آنچه  به سلامتتان کمک میکند اهمیت دارد</h4> </Hidden>
-
                             </div></Col>
 
-                            <Col sm={12} md={12} lg={12}> <div className="title paddingTop "> <a  href="#" >
-                                <Scrollchor   to="#Dwnl"  className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " >حالا دانلود کنید</Scrollchor>
+                            <Col sm={12} md={12} lg={12}> <div className="centerText "> <a  href="#" >
+                                <ScrollAnimation animateIn='jello'
+                                                 initiallyVisible={true}
+                                                 animateOnce={true}
+                                                 delay={500}
+                                                 animationInDuration={400}>    <Scrollchor   to="#Dwnl"  className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " >حالا دانلود کنید</Scrollchor></ScrollAnimation>
                               {/*<Scrollchor  to="#Dwnl" ><img className=" paddingTop paddingBottom "  src={require('./../image/downloadx.png')} style={{height:"60px" , width : '170px' }} alt=""/></Scrollchor>*/}
                                </a></div></Col>
-                            <Col sm={12} md={12} lg={12}> <div className="title paddingTop ">  <img className="padBot "  src={require('./../image/rocketsvg.png')} style={{height:'60%' , width : '35%'}}  alt=""/>  </div></Col>
+                            <Col sm={12} md={12} lg={12}> <div className="title "> <ScrollAnimation animateIn='bounce'
+                                                                                                    initiallyVisible={true}
+                                                                                                    animateOnce={false}
+                                                                                                    delay={500}
+                                                                                                    animationInDuration={400}>
+
+                                <img className="padBot  "  src={require('./../image/rocketsvg.png')} style={{height:'60%' , width : '42%'}}  alt=""/> </ScrollAnimation> </div></Col>
 
 
                         </Row>

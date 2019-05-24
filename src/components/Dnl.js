@@ -1,5 +1,7 @@
 import React,{Component}from 'react';
-import {Row,Col,Hidden,Visible} from 'react-grid-system';
+import {Hidden,Visible} from 'react-grid-system';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+
 /*import ScrollAnimation from 'react-animate-on-scroll';*/
 import "../css/animate.css";
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -24,21 +26,23 @@ export default class Dnl extends Component{
 
                <div style={{display : 'flex' , textAlign:'center',  justifyContent: 'center' }}>
                    <div className="Dnl" style={{ paddingBottom:'20%'}}>
+                       <Grid fluit>
                        <Row>
-                           <Col  className=" shadow" xs={12} sm={12} md={4} lg={4 }>
+                           <Col  className=" shadow" sm={12} md={4} lg={4}>
                                <a className="shadow" href="">
                                    <img src={require('./../image/badge-newx.png')} style={{height:'90%' , width : '40%'}}alt="دانلود مستقیم"/>
                                </a>
                            </Col>
-                           <Col  className=" shadow" xs={12} sm={12} md={4} lg={4 }>
+                           <Col  className=" shadow" sm={12} md={4} lg={4}>
                                <a className="shadow" href="">
                                    <img src={require('./../image/logo-download.png')} style={{height:'90%' , width : '40%'}} alt="دانلود مستقیم"/>
                                </a>
                            </Col>
-                           <Col className="" xs={12} sm={12} md={4} lg={4}>
+                           <Col className="" sm={12} md={4} lg={4}>
                                <a className="shadow" href=""><img src={require('./../image/my2.png')} style={{height:'90%' , width : '40%'}} alt="دانلود از کافه بازار "/></a>
                            </Col>
                        </Row>
+                       </Grid>
                    </div>
                </div>
                 <Hidden  xs sm md>
