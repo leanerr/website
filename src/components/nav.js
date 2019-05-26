@@ -87,7 +87,7 @@ export default class Nav extends Component{
 
                                 </div>
 
-                            <div style={{paddingRight: '44%' , paddingTop : '3px'}}>
+                            <div style={{paddingRight: '44%' , paddingTop : '5px'}}>
                                 <img className='radius' src={require('./../image/photo1752615152809781221.jpg')} style={{width:'50%', borderRadius:'6% !important'}} alt=""/>
                             </div>
                         </div>

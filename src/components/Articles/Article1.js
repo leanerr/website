@@ -80,7 +80,7 @@ export default class Article1 extends Component{
                             {/*</div></Col>*/}
                                <Col sm={12} md={12} lg={12}> <div className="title">  <img className="radius borderWhite" src={require('../../image/brooke-lark-229136-unsplash.jpg')} style={{height:'50%' , width : '50%' }} alt=""/>  </div></Col>
 
-                            <Col sm={12} md={12} lg={12}> <div className="centerText " style={{paddingTop : '.5%'}}> <a  href="#" >
+                            <Col sm={12} md={12} lg={12}> <div className="centerText " style={{paddingTop : '1%'}}> <a  href="#" >
                                  <Scrollchor   to="#Article"  className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2" >مطالعه کنید</Scrollchor>
                                  {/*<Scrollchor  to="#Dwnl" ><img className=" paddingTop paddingBottom "  src={require('./../image/downloadx.png')} style={{height:"60px" , width : '170px' }} alt=""/></Scrollchor>*/}
                             </a></div></Col>

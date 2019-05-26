@@ -69,7 +69,7 @@ export default class Article2 extends Component{
                         }} />
                 </div>
                 {/*head*/}
-                <div style={{height:'auto' ,paddingBottom:'%'}}>
+                <div style={{height:'auto' ,paddingBottom:'1%'}}>
                     <Grid fluid>
                         <Row>
                             {/*<Col  sm={12} md={12} lg={12}> <div className="title " style={{paddingTop:'%'}}>    <h1> FitEx</h1>*/}
