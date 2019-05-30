@@ -77,7 +77,7 @@ export default class Article3 extends Component{
                             {/*<h5 className="white">تیم محتوای ما با تلاش بسیار تمامی محتوا و آموزش ها را منحصرا و با کیفیت بالا تولید و به روزرسانی می کند </h5>*/}
 
                             {/*</div></Col>*/}
-                            <Col sm={12} md={12} lg={12}> <div className="title">  <img className="radius borderWhite" src={require('../../image/victor-freitas-569958-unsplash.jpg')} style={{height:'50%' , width : '50%' }} alt=""/>  </div></Col>
+                            <Col sm={12} md={12} lg={12}> <div className="title">  <img className="radius borderWhite" src={require('../../image/humphrey-muleba-1119283-unsplash.jpg')} style={{height:'50%' , width : '50%' }} alt=""/>  </div></Col>
 
                             <Col sm={12} md={12} lg={12}> <div className="centerText paddingTop"> <a  href="#" >
                                 <Scrollchor   to="#Article"  className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2" >مطالعه کنید</Scrollchor>
