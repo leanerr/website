@@ -776,3 +776,9 @@ p{
 .directionL {
     dir : ltr;
 }
+.pSize {
+    font-size: 14px !important;
+}
+.padCent {
+    padding: 5px;
+}
