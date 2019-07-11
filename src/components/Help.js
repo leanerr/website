@@ -96,25 +96,25 @@ export default class Help extends Component{
                         <Row>
                             <Col sm={6} md={6} lg={6}> <div className=" paddingTop paddingBottom "   >
                                 <div className='backColor2' style={{padding:'3%'}}>
-                                    <div><img src={require('./../image/tamrin/photo5882186372092113047.jpg')} style={{height:'90%' , width : '100%' , borderRadiius:'2%'}} alt="دانلود از کافه بازار "/></div>
+                                    <div><img src={require('./../image/tamrin/photo5882186372092113047-min.jpg')} style={{height:'90%' , width : '100%' , borderRadiius:'2%'}} alt="دانلود از کافه بازار "/></div>
                                 </div>
                             </div></Col>
 
                             <Col sm={6} md={6} lg={6}> <div className=" paddingTop paddingBottom "   >
                                 <div className='backColor3' style={{padding:'2%'}}>
-                                    <div><img src={require('./../image/tamrin/photo5882186372092113053.jpg')} style={{height:'90%' , width : '100%' , borderRadiius:'2%'}} alt="دانلود از کافه بازار "/></div>
+                                    <div><img src={require('./../image/tamrin/photo5882186372092113053-min.jpg')} style={{height:'90%' , width : '100%' , borderRadiius:'2%'}} alt="دانلود از کافه بازار "/></div>
                                 </div>
                             </div></Col>
 
                             <Col sm={6} md={6} lg={6}> <div className=" paddingTop paddingBottom "   >
                                 <div className='backColor4' style={{padding:'2%'}}>
-                                    <div><img src={require('./../image/tamrin/photo5882186372092113048.jpg')} style={{height:'90%' , width : '100%' , borderRadiius:'2%'}} alt="دانلود از کافه بازار "/></div>
+                                    <div><img src={require('./../image/tamrin/photo5882186372092113048-min.jpg')} style={{height:'90%' , width : '100%' , borderRadiius:'2%'}} alt="دانلود از کافه بازار "/></div>
                                 </div>
                             </div></Col>
 
                             <Col sm={6} md={6} lg={6}> <div className=" paddingTop paddingBottom "   >
                                 <div className='backColor4' style={{padding:'2%'}}>
-                                    <div><img src={require('./../image/tamrin/photo5882186372092113050.jpg')} style={{height:'90%' , width : '100%' , borderRadiius:'2%'}} alt="دانلود از کافه بازار "/></div>
+                                    <div><img src={require('./../image/tamrin/photo5882186372092113050-min.jpg')} style={{height:'90%' , width : '100%' , borderRadiius:'2%'}} alt="دانلود از کافه بازار "/></div>
                                 </div>
                             </div></Col>
                         </Row>

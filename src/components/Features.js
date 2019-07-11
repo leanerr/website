@@ -58,7 +58,7 @@ export default class Features extends Component{
                         <Col className=" " xs={12} sm={12} md={4} lg={4}>
 
 
-                            <img src={require('./../image/screen.jpg')} style={{height:'530px' , width:"370px",borderRadius:15}} alt="hi" />
+                            <img src={require('./../image/Fitex-screen/photo5850280052187574695.jpg')} style={{height:'560px' , width:"320px",borderRadius:15}} alt="hi" />
 
 
 

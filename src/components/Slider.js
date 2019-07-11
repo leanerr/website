@@ -45,17 +45,35 @@ export default class Slider extends Component {
 
                     >
 
-                            <Slide className="Demo-swiper__slide" >
-                                <img src={require('./images/screen1.jpg')} style={{width:'27%',paddingTop:'30px'}} />
+                     <Slide className="Demo-swiper__slide" >
+                                <img src={require('./../image/Fitex-screen/photo5850280052187574690.jpg')} style={{width:'27%',paddingTop:'30px'}} />
 
-                            </Slide> <Slide className="Demo-swiper__slide" >
-                                <img src={require('./images/screen2.jpg')} style={{width:'27%',paddingTop:'30px'}} />
+                            </Slide><Slide className="Demo-swiper__slide" >
+                                <img src={require('./../image/Fitex-screen/photo5850280052187574691.jpg')} style={{width:'27%',paddingTop:'30px'}} />
+
+                            </Slide><Slide className="Demo-swiper__slide" >
+                                <img src={require('./../image/Fitex-screen/photo5850280052187574692.jpg')} style={{width:'27%',paddingTop:'30px'}} />
+
+                            </Slide><Slide className="Demo-swiper__slide" >
+                                <img src={require('./../image/Fitex-screen/photo5850280052187574693.jpg')} style={{width:'27%',paddingTop:'30px'}} />
+
+                            </Slide><Slide className="Demo-swiper__slide" >
+                                <img src={require('./../image/Fitex-screen/photo5850280052187574694.jpg')} style={{width:'27%',paddingTop:'30px'}} />
 
                             </Slide>
                         <Slide className="Demo-swiper__slide" >
-                                <img src={require('./images/screen3.jpg')} style={{width:'27%',paddingTop:'30px'}} />
+                            <img src={require('./images/screen1.jpg')} style={{width:'27%',paddingTop:'30px'}} />
 
-                            </Slide>
+                        </Slide>
+                        <Slide className="Demo-swiper__slide" >
+                            <img src={require('./images/screen3.jpg')} style={{width:'27%',paddingTop:'30px'}} />
+
+                        </Slide>
+
+                        <Slide className="Demo-swiper__slide" >
+                            <img src={require('./images/screen2.jpg')} style={{width:'27%',paddingTop:'30px'}} />
+
+                        </Slide>
 
 
 

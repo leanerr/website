@@ -80,12 +80,12 @@ export default class ConnectWithUs extends Component{
                                 {/*<Scrollchor  to="#Dwnl" ><img className=" paddingTop paddingBottom "  src={require('./../image/downloadx.png')} style={{height:"60px" , width : '170px' }} alt=""/></Scrollchor>*/}
                             </a></div></Col>
                             <Col sm={12} md={4} lg={4}> <div className="centerText paddingTop paddingBottom"> <a  href="#" >
-                                <Scrollchor   to="#Links"  className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " >ویدیو های ما در آپارات</Scrollchor>
+                                <Scrollchor   to="#Links"  className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " > از طریق اینستاگرام</Scrollchor>
                                 {/*<Scrollchor  to="#Dwnl" ><img className=" paddingTop paddingBottom "  src={require('./../image/downloadx.png')} style={{height:"60px" , width : '170px' }} alt=""/></Scrollchor>*/}
                             </a></div>
                             </Col>
                             <Col sm={12} md={4} lg={4}> <div className="centerText paddingTop paddingBottom"> <a  href="#" >
-                                <Scrollchor   to="#Links"  className="hbtn hb-fill-right-br hpad2 hbor4 hpill" >از طریق اینستاگرام</Scrollchor>
+                                <Scrollchor   to="#Links"  className="hbtn hb-fill-right-br hpad2 hbor4 hpill" >ویدیو های ما در آپارات</Scrollchor>
                                 {/*<Scrollchor  to="#Dwnl" ><img className=" paddingTop paddingBottom "  src={require('./../image/downloadx.png')} style={{height:"60px" , width : '170px' }} alt=""/></Scrollchor>*/}
                             </a></div></Col>
 
@@ -102,7 +102,7 @@ export default class ConnectWithUs extends Component{
                     <Grid fluid>
                         <Row>
                     <Col sm={4} md={4} lg={4}> <div className=" paddingTop paddingBottom" >
-                        <a  href="https://www.t.me/fitex_app" >
+                        <a  href="/" >
                     <div className='backColor2' style={{padding:'5%'}}>
                         <div><h3 className='white title'>از طریق تلگرام</h3></div>
                         <div style={{border:'white solid 2px'}}></div>
@@ -110,19 +110,19 @@ export default class ConnectWithUs extends Component{
                     </div></a></div>
                     </Col>
 
-                    <Col sm={4} md={4} lg={4}> <div className=" paddingTop paddingBottom"> <a  href="https://www.aparat.com/FiteX" >
+                    <Col sm={4} md={4} lg={4}> <div className=" paddingTop paddingBottom"> <a href="https://www.instagram.com/fitexapp/" >
                         <div className='backColor3' style={{padding:'5%'}}>
-                            <div><h3 className='white title'>از طریق آپارات</h3></div>
+                            <div><h3 className='white title'> از طریق اینستاگرام</h3></div>
                             <div style={{border:'white solid 2px'}}></div>
-                            <div><h3 className='white title'>Fitex@</h3></div>
+                            <div><h3 className='white title'>fitexapp@</h3></div>
                         </div>
                     </a></div></Col>
 
-                            <Col sm={4} md={4} lg={4}> <div className=" paddingTop paddingBottom "   > <a  href="https://www.instagram.com/fitex_app/" >
+                            <Col sm={4} md={4} lg={4}> <div className=" paddingTop paddingBottom "   > <a  href="/" >
                             <div className='backColor4' style={{padding:'5%'}}>
-                                <div><h3 className='white title'>از طریق اینستاگرام</h3></div>
+                                <div><h3 className='white title'>از طریق آپارات</h3></div>
                                 <div style={{border:'white solid 2px'}}></div>
-                                <div><h3 className='white title'>fitex_app@</h3></div>
+                                <div><h3 className='white title'>Fitex@</h3></div>
                             </div>
                     </a></div></Col>
                         </Row>

@@ -18,31 +18,32 @@ export default class Dnl extends Component{
                                  animateOnce={true}>
                     <div style={{textAlign:'center' , paddingBottom:'8%'}}>
 
-                        <h1 className="h1useh5">دانلود </h1>
-                        <h3 className="h5useh1 white" >برای استفاده از خدمات فیتکس </h3>
+                        {/*<h1 className="h1useh5">دانلود </h1>*/}
+                        {/*<h3 className="h5useh1 white" >برای استفاده از خدمات فیتکس </h3>*/}
                     </div>
                 </ScrollAnimation>
 
 
                <div style={{display : 'flex' , textAlign:'center',  justifyContent: 'center' }}>
                    <div className="Dnl" style={{ paddingBottom:'20%'}}>
-                       <Grid fluit>
-                       <Row>
-                           <Col  className=" shadow" sm={12} md={4} lg={4}>
-                               <a className="shadow" href="">
-                                   <img src={require('./../image/badge-newx.png')} style={{height:'90%' , width : '40%'}}alt="دانلود مستقیم"/>
-                               </a>
-                           </Col>
-                           <Col  className=" shadow" sm={12} md={4} lg={4}>
-                               <a className="shadow" href="">
-                                   <img src={require('./../image/logo-download.png')} style={{height:'90%' , width : '40%'}} alt="دانلود مستقیم"/>
-                               </a>
-                           </Col>
-                           <Col className="" sm={12} md={4} lg={4}>
-                               <a className="shadow" href=""><img src={require('./../image/my2.png')} style={{height:'90%' , width : '40%'}} alt="دانلود از کافه بازار "/></a>
-                           </Col>
-                       </Row>
-                       </Grid>
+                       <a href="" className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " >  برای دانلود مستقیم کلیک کنید</a>
+                       {/*<Grid fluit>*/}
+                       {/*<Row>*/}
+                           {/*<Col  className=" shadow" sm={12} md={4} lg={4}>*/}
+                               {/*<a className="shadow" href="">*/}
+                                   {/*<img src={require('./../image/badge-newx.png')} style={{height:'90%' , width : '40%'}}alt="دانلود مستقیم"/>*/}
+                               {/*</a>*/}
+                           {/*</Col>*/}
+                           {/*<Col  className=" shadow" sm={12} md={4} lg={4}>*/}
+                               {/*<a className="shadow" href="">*/}
+                                   {/*<img src={require('./../image/logo-download.png')} style={{height:'90%' , width : '40%'}} alt="دانلود مستقیم"/>*/}
+                               {/*</a>*/}
+                           {/*</Col>*/}
+                           {/*<Col className="" sm={12} md={4} lg={4}>*/}
+                               {/*<a className="shadow" href=""><img src={require('./../image/my2.png')} style={{height:'90%' , width : '40%'}} alt="دانلود از کافه بازار "/></a>*/}
+                           {/*</Col>*/}
+                       {/*</Row>*/}
+                       {/*</Grid>*/}
                    </div>
                </div>
                 <Hidden  xs sm md>

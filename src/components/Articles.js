@@ -106,7 +106,7 @@ export default class Articles extends Component{
                             <div className='backColor2'>
 
 
-                                <img className="blogpic radius"   style={{width:'92%' , height:'210px'  , padding:'3.5%' , borderRadius:'15% !important'}} src={require('./../image/victor-freitas-570027-unsplash.jpg')} alt="hi"/>
+                                <img className="blogpic radius"   style={{width:'92%' , height:'210px'  , padding:'3.5%' , borderRadius:'15% !important'}} src={require('./../image/victor-freitas-569958-unsplash-min (1).jpg')} alt="hi"/>
 
                                 <div className='' style={{border:'white solid 1.5px'}}></div>
 
@@ -118,7 +118,7 @@ export default class Articles extends Component{
                         <Col  className=" paddingBottom" sm={12} md={4} lg={4}>
                             <div className='backColor3'>
 
-                                <img className="blogpic radius" style={{width:'92%' , height:'210px' , padding:'3.5%' ,borderRadius:'15% !important'}} src={require('./../image/meghan-holmes-779221-unsplash.jpg')} alt="hs"/>
+                                <img className="blogpic radius" style={{width:'92%' , height:'210px' , padding:'3.5%' ,borderRadius:'15% !important'}} src={require('./../image/meghan-holmes-779221-unsplash-min.jpg')} alt="hs"/>
                                 <div className='' style={{border:'white solid 1.5px'}}></div>
 
                                 <h4 className='white'>Fitness trackers prove helpful in monitoring cancer patients</h4>
@@ -129,7 +129,7 @@ export default class Articles extends Component{
                         <Col  className=" paddingBottom" sm={12} md={4} lg={4}>
                             <div className='backColor4'>
 
-                                <img className="blogpic radius" style={{width:'92%' , height:'210px' , padding:'3.5%' ,borderRadius:'% !important'}} src={require('./../image/victor-freitas-569958-unsplash.jpg')} alt="hs"/>
+                                <img className="blogpic radius" style={{width:'92%' , height:'210px' , padding:'3.5%' ,borderRadius:'% !important'}} src={require('./../image/victor-freitas-570027-unsplash-min.jpg')} alt="hs"/>
                                 <div className='' style={{border:'white solid 1.5px'}}></div>
 
                                 <h4 className='white'>Are you looking to build some serious muscle?Stop wasting your money</h4>
