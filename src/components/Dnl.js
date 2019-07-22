@@ -26,7 +26,7 @@ export default class Dnl extends Component{
 
                <div style={{display : 'flex' , textAlign:'center',  justifyContent: 'center' }}>
                    <div className="Dnl" style={{ paddingBottom:'20%'}}>
-                       <a href="" className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " >  برای دانلود مستقیم کلیک کنید</a>
+                       <a href="https://github.com/fitexapp/app/releases/download/v1.0.0/fitex-v1.0.0.apk" className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " >  برای دانلود مستقیم کلیک کنید</a>
                        {/*<Grid fluit>*/}
                        {/*<Row>*/}
                            {/*<Col  className=" shadow" sm={12} md={4} lg={4}>*/}
