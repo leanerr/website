@@ -8,6 +8,7 @@ import Wave from "./../Wave";
 import Index from "./../ScrollUp";
 import Footer from "./../Footer";
 import {Hidden,Visible} from 'react-grid-system';
+import Blog from "../Blog";
 
 
 
@@ -48,25 +49,25 @@ export default class Article3 extends Component{
             {/*particles*/}
             <div className='backColor4'>
                 <div  style={{height: '18vh' , width:'75%',paddingRight:'10%',paddingLeft:'10%'}}>
-                    <Particles
-                        params={{
-                            "particles": {
-                                "number": {
-                                    "value": 62
-                                },
-                                "size": {
-                                    "value": 3
-                                }
-                            },
-                            "interactivity": {
-                                "events": {
-                                    "onhover": {
-                                        "enable": true,
-                                        "mode": "repulse"
-                                    }
-                                }
-                            }
-                        }} />
+                    {/*<Particles*/}
+                        {/*params={{*/}
+                            {/*"particles": {*/}
+                                {/*"number": {*/}
+                                    {/*"value": 62*/}
+                                {/*},*/}
+                                {/*"size": {*/}
+                                    {/*"value": 3*/}
+                                {/*}*/}
+                            {/*},*/}
+                            {/*"interactivity": {*/}
+                                {/*"events": {*/}
+                                    {/*"onhover": {*/}
+                                        {/*"enable": true,*/}
+                                        {/*"mode": "repulse"*/}
+                                    {/*}*/}
+                                {/*}*/}
+                            {/*}*/}
+                        {/*}} />*/}
                 </div>
                 {/*head*/}
                 <div style={{height:'auto' ,paddingBottom:'%'}}>
@@ -123,7 +124,7 @@ export default class Article3 extends Component{
 
             </div>
 
-
+<Blog/>
             <Wave/>
             <Index/>
             <div>

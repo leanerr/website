@@ -26,6 +26,7 @@ import Articles from "./components/Articles";
 import Article1 from "./components/Articles/Article1";
 import Article2 from "./components/Articles/Article2";
 import Article3 from "./components/Articles/Article3";
+import Blog from "./components/Blog";
 
 
 
@@ -50,19 +51,21 @@ class App extends Component {
 
     <Hidden  md xs sm>     <Route path="/" exact={true} component={Features}/> </Hidden>
 
-    <Route path="/" exact={true} component={News}/>
+                <Hidden  md xs sm>  <Route path="/" exact={true} component={News}/> </Hidden>
                 <Hidden  md xs sm>  <Route path="/" exact={true} component={Slider}/></Hidden>
                 <Hidden  lg xl> <Route path="/" exact={true} component={SliderXs}/></Hidden>
 
     <Hidden  md xs sm>     <Route path="/" exact={true} component={Social}/> </Hidden>
 
-    <Route path="/" exact={true} component={Pro}/>
-    <Route path="/" exact={true} component={Articles}/>
-                <Route path="/" exact={true} component={Dnl}/>
+                <Hidden  md xs sm>  <Route path="/" exact={true} component={Pro}/> </Hidden>
+                <Hidden  md xs sm>  <Route path="/" exact={true} component={Articles}/></Hidden>
+         <Route path="/" exact={true} component={Blog}/>
+
                 <Route path='/get' component={() => {
                     window.location.href = 'https://github.com/fitexapp/app/releases/download/latest/fitex.apk';
                     return null;
-                }}/>
+                }}/> <Route path="/" exact={true} component={Dnl}/>
+
                 <Route path="/" exact={true} component={Wave}/>
                 <Route path="/" exact={true} component={Index}/>
                 <Route path="/" exact={true} component={Footer}/>

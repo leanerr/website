@@ -64,7 +64,8 @@ export default class Part extends Component{
                                                  initiallyVisible={true}
                                                  animateOnce={true}
                                                  delay={500}
-                                                 animationInDuration={400}>    <Scrollchor   to="#Dwnl"  className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " >حالا دانلود کنید</Scrollchor></ScrollAnimation>
+                                                 // animationInDuration={400}>    <Scrollchor   to="#Dwnl"  className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " >حالا دانلود کنید</Scrollchor></ScrollAnimation>
+                                                 animationInDuration={400}>    <a   href= 'https://github.com/fitexapp/app/releases/download/latest/fitex.apk'  className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " >حالا دانلود کنید</a></ScrollAnimation>
                               {/*<Scrollchor  to="#Dwnl" ><img className=" paddingTop paddingBottom "  src={require('./../image/downloadx.png')} style={{height:"60px" , width : '170px' }} alt=""/></Scrollchor>*/}
                                </a></div></Col>
                             <Col sm={12} md={12} lg={12}> <div className="title "> <ScrollAnimation animateIn='bounce'

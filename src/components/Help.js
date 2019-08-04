@@ -9,6 +9,7 @@ import Index from "./ScrollUp";
 import Footer from "./Footer";
 import {Hidden,Visible} from 'react-grid-system';
 import Articles from "./Articles";
+import Blog from "./Blog";
 
 
 
@@ -123,6 +124,7 @@ export default class Help extends Component{
 
             </div>
             <Articles/>
+            <Blog/>
             <Dnl/>
             <Wave/>
             <Index/>

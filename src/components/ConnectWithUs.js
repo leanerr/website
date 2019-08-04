@@ -8,6 +8,7 @@ import Index from "./ScrollUp";
 import Wave from "./Wave";
 import Dnl from "./Dnl";
 import {Hidden,Visible} from 'react-grid-system';
+import Blog from "./Blog";
 
 
 export default class ConnectWithUs extends Component{
@@ -130,6 +131,8 @@ export default class ConnectWithUs extends Component{
                 </div>
 
             </div>
+            <Blog />
+
             <Dnl/>
             <Wave/>
             <Index/>

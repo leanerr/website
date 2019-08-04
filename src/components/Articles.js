@@ -138,6 +138,7 @@ export default class Articles extends Component{
                             </div>
                         </Col>
                     </Row>
+
                 </ScrollAnimation>
                 </Grid>
             </div>
