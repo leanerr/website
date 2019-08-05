@@ -34,7 +34,7 @@ export default class blog extends Component{
 
                                 <h3 className='white '>ما توی مجله ورزشیمون واستون آخرین مطالب و مقالات تخصصی ورزش و سلامت و حتی تغذیه رو  گرد آوری میکنیم</h3>
                                 <h5 className='white  pSize '>  کلیک کنید تا وارد مجله ورزشی ما بشید و بتونید از آخرین مقالات استفاده کنید</h5>
-                                <a  href='https://blog.fitexapp.ir' className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2" >مجله ورزشی فیتکس</a>
+                                <a  href='https://mag.fitexapp.ir' className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2" >مجله ورزشی فیتکس</a>
                             </div>
                         </Col>
                     </Row>

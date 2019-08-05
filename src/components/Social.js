@@ -57,7 +57,7 @@ export default class Social extends Component{
                                                  delay={100}>       <div class="title">    <h1> FitEx</h1></div>
                                     <h2> برای گسترش ورزش و سلامت </h2> </ScrollAnimation>
                                 <h4>مقالات ورزشی بخوانید</h4>
-                                <a   href="https://blog.fitexapp.ir/"  className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " >مجله ورزشی فیتکس</a>
+                                <a   href="https://mag.fitexapp.ir/"  className="hbtn hb-fill-middle-bg-br hbor4 hpill hpad2 " >مجله ورزشی فیتکس</a>
 
 
                             </div>
