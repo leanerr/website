@@ -58,7 +58,7 @@ export default class Nav extends Component{
 
                             <Scrollchor style={{paddingRight:30, paddingTop : 20}}   to="#Dwnl" ><span onClick={()=>{this.toggleDrawer()}}>دانلود</span></Scrollchor>
                             <Scrollchor style={{paddingRight:30, paddingTop : 20}}   to="#What people say" ><span onClick={()=>{this.toggleDrawer()}}>  تصاویر</span></Scrollchor>
-                            <a style={{paddingRight:30, paddingTop : 20}}   href="https://blog.fitexapp.ir/" ><span onClick={()=>{this.toggleDrawer()}}>  مقالات</span></a>
+                            <a style={{paddingRight:30, paddingTop : 20}}   href="https://mag.fitexapp.ir/" ><span onClick={()=>{this.toggleDrawer()}}>  مقالات</span></a>
                             {/*<Scrollchor style={{paddingRight:30,paddingTop : 20}}  to="#Screenshots" ><span onClick={()=>{this.toggleDrawer()}}>  تصاویر</span> </Scrollchor>*/}
                             <Scrollchor style={{paddingRight:30,paddingTop : 20}}  to="#features" ><span onClick={()=>{this.toggleDrawer()}}> ویژگیها</span></Scrollchor>
                             <Scrollchor style={{paddingRight:30,paddingTop : 20}}  to="#Home"><span onClick={()=>{this.toggleDrawer()}}>  خانه</span></Scrollchor>
@@ -75,7 +75,7 @@ export default class Nav extends Component{
                                 <div className='nav__right'>
               <li><Scrollchor   to="#Dwnl"  className='rang hbtn hb-border-top-br3 hpad4 hbor4 hpill'  >دانلود</Scrollchor></li>
                          <li> <Scrollchor to="#What people say"  >تصاویر</Scrollchor></li>
-                         <li> <a href="https://blog.fitexapp.ir/"  >مقالات</a></li>
+                         <li> <a href="https://mag.fitexapp.ir/"  >مقالات</a></li>
                            {/*<li> <Scrollchor  to="#Screenshots" >تصاویر </Scrollchor></li>*/}
                                 </div>
 
