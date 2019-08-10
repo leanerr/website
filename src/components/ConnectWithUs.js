@@ -50,7 +50,7 @@ export default class ConnectWithUs extends Component{
                         params={{
                             "particles": {
                                 "number": {
-                                    "value": 62
+                                    "value": 32
                                 },
                                 "size": {
                                     "value": 3

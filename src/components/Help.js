@@ -51,7 +51,7 @@ export default class Help extends Component{
                         params={{
                             "particles": {
                                 "number": {
-                                    "value": 62
+                                    "value": 30
                                 },
                                 "size": {
                                     "value": 3

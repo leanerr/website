@@ -33,7 +33,7 @@ export default class Part extends Component{
                       params={{
                           "particles": {
                               "number": {
-                                  "value": 62
+                                  "value": 35
                               },
                               "size": {
                                   "value": 3
