@@ -1,0 +1,165 @@
+<%
+
+let { search  , order , category } = req.query;
+
+%>
+<!--nav with category-->
+<nav class="navbar navbar-expand-md navbar-dark " style="margin-top: 100px">
+    <div class="container">
+        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#dw" aria-controls="dw" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--<div class="collapse navbar-collapse p-1 " id="dw">-->
+            <!--<ul class="navbar-nav ml-auto mr-auto ">-->
+
+                <!--<% categories.forEach(category => { %>-->
+                <!--<li class="nav-item dropdown m-2 p-1  ">-->
+                    <!--<a class="nav-link dropdown-toggle d-inline badge-dark text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--<%= category.name%>-->
+                    <!--</a>-->
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+                        <!--<% if(category.childs) { %>-->
+                        <!--<ul class="p-1 badge-dark  ">-->
+                            <!--<% category.childs.forEach(cate => { %>-->
+                            <!--<li class="d-block m-1 d-flex justify-content-center">-->
+                                <!--<a class="text-white text-decoration-none  font-weight-normal " href="/post?category=<%= cate.slug %>"><%= cate.name %></a>-->
+                            <!--</li>-->
+                            <!--<% }) %>-->
+                        <!--</ul>-->
+                        <!--<% } %>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <!--<% }) %>-->
+
+
+            <!--</ul>-->
+
+        <!--</div>-->
+    </div>
+
+</nav>
+
+
+<!--search-->
+<section class="search-sec mb-5 " >
+    <div class="container">
+        <form action="/post" method="get" novalidate="novalidate">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                            <button type="submit" class="btn wrn-btn btn-outline-primary">جست و جو</button>
+                        </div>
+
+
+
+
+                        <div class="col-lg-6 col-md-3 col-sm-12 p-0">
+                            <input type="text" class="form-control search-slt" name="search" placeholder="کلمه یا متن دلخواهتان را جست و جو کنید ">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <select name="category" class="form-control search-slt">
+                                <option value="all">همه دسته ها</option>
+                                <% categories.forEach(cate => { %>
+                                <option value="<%= cate.slug %>" <%= cate.slug === category ? 'selected' : '' %> ><%= cate.name %></option>
+                                <% }) %>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!--end search-->
+
+
+<!--category-->
+<form action="/post" method="GET">
+
+    <% if(search) { %>
+    <div class="form-group col-md-3">
+        <input type="hidden" name="search" value="<%= search %>">
+        <span>عبارت جستجو شده : <%= search %> <a href="/post?<%= order ? '&order=1' : '' %>" class="btn btn-sm btn-dark">حذف</a></span>
+    </div>
+    <% } %>
+
+
+
+    <!--<div class="form-group col-md-3">-->
+        <!--<select name="category" class="form-control">-->
+            <!--<option value="all">همه دسته ها</option>-->
+            <!--<% categories.forEach(cate => { %>-->
+            <!--<option value="<%= cate.slug %>" <%= cate.slug === category ? 'selected' : '' %> ><%= cate.name %></option>-->
+            <!--<% }) %>-->
+        <!--</select>-->
+    <!--</div>-->
+
+
+    <!--<div class="form-group col-md-3">-->
+        <!--<label class="checkbox-inline">-->
+            <!--<input type="checkbox" name="order" value="1" class="ml-2" <%= order === '1' ? 'checked' : '' %>>قدیمی ترین ها-->
+        <!--</label>-->
+    <!--</div>-->
+
+    <!--<div class="form-group col-md-3">-->
+        <!--<button class="btn btn-dark pl-3 pr-" type="submit">مرتب سازی</button>-->
+    <!--</div>-->
+</form>
+
+<!--categore end--
+<!--show cards-->
+
+<% if(courses.length) { %>
+<div class="row text-center mb-2 my-card-row justify-content-md-between">
+    <% courses.forEach(course => { %>
+
+    <div class="col-lg-4 col-md-12 mb-4 ml-1 my-card">
+
+        <div class="view overlay  mb-2">
+            <img src="<%= course.thumb %>" alt="<%= course.title %>" class="img-fluid w-100">
+            <a  href="<%= course.path() %>">
+                <div class="mask rgba-white-slight"></div>
+            </a>
+        </div>
+
+        <h2 class="mb-2 mt-4 font-weight-bold article-title"><a  href="<%= course.path() %>"><%= course.title %></a> </h2>
+
+
+        <div class="row card-tags">
+
+
+            <div class="col-lg-6 col-md-6 text-lg-right tags ">
+                <p class="grey-text">
+                    <i class="far fa-calendar-alt"></i> <%= date(course.createdAt).format('jD jMMMM jYYYY') %></p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 text-lg-left tags">
+                <p class="grey-text">
+                    <i class="far fa-clock-o" aria-hidden="true"></i> <%= course.timeline %></p>
+            </div>
+
+
+        </div>
+        <p class="dark-grey-text article-text"><%- course.sum.substr(0,130)%>... </p>
+        <a class="text-uppercase font-small font-weight-bold spacing btn see-btn" href="#">مشاهده <i
+                    class="fad fa-chevron-double-left"></i></a>
+
+    </div>
+    <% }) %>
+
+
+</div>
+<% } else { %>
+
+<div class="row d-flex justify-content-center">
+    <p class="alert-primary p-5 font-weight-bold text-center">مطلبی یافت نشد</p>
+</div>
+<% } %>
+<div class="pt-5">
+    <%- include(viewPath('layouts/pagination') ,{ pagination : courses}) %>
+</div>
+
+

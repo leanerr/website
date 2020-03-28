@@ -1,0 +1,158 @@
+<!--second nav with category and search-->
+
+
+<header class="jumbotron hero-spacer text-white  row  ">
+    <div class="col-md-6 p-3 col-12">
+        <h1 class=" font-weight-bold "> اپلیکیشن و مجله ورزشی <strong>فیتکس</strong> !</h1>
+        <!--<h4 class="pt-2 pb-2 ">مقالات و پست های سلامت و تغذیه را اینجا بخوانید</h4>-->
+        <h4 class="pt-2 pb-2 ">با دانلود اپلیکیشن اندرویدی ما حرکات ورزشی رو یاد بگیرین و برای تمرین توی خونه برنامه بگیرین!</h4>
+        <h7 class="pt-2 "> مطالب مرتبط با تندرستی , سلامت , ورزش , تغذیه مناسب , برنامه های تمرینی و تناسب اندام را
+            میتوانید بطور مرتب در مجله ما بخوانید...</h7>
+        <img class="cardHeight img-fluid mt-5" src="https://mag.fitexapp.ir/undraw_working_out_6psf.svg" alt="fitex">
+
+    </div>
+
+
+    <div class="col-md-6 text-left col-12">
+
+        <div class="  text-center">
+            <div class=" ">
+                <img src="ir.fitex.app-055823928445-compressor.png" alt="" width="50%" class=" img-fluid">
+            </div>
+            <a href="/land" class="btn btn-md btn-dark font-weight-bold"> برای مشاهده اطلاعات بیشتر کلیک کنید <i class="fas fa-long-arrow-alt-left"></i></a>
+            <p class=" "> یه اپلیکیشن خوب و عالی برای تمرین توی خونه</p>
+
+        </div>
+
+    </div>
+</header>
+
+<div class="container mt-5 new-articles-section">
+    <section>
+        <div class="row">
+            <% header1.forEach(course => { %>
+            <div class="col-lg-8 col-md-12">
+                <div class="news-tile news-title-big view zoom z-depth-1  mb-4">
+                    <a href="<%= course.path() %>" class="text-white">
+                        <img class="w-100" src="<%= course.thumb %>"
+                            class="img-fluid " alt="sample image" />
+                        <div class="mask rgba-stylish-strong">
+                            <div class="text-white text-center py-lg-5 py-0 my-0">
+                                <div>
+                                    <h2 class="card-title font-weight-bold pt-2">
+                                        <strong><%= course.title %></strong>
+                                    </h2>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <% }) %>
+
+            <% header2.forEach(course => { %>
+
+            <div class="col-lg-4 col-md-12">
+                <!--News tile -->
+                <div class="news-tile view zoom z-depth-1  mb-4">
+                        <a href="<%= course.path() %>" class="text-white">
+                            <img src="<%= course.thumb %>"
+                            class="img-fluid w-100 " alt="sample image" />
+                        <div class="mask rgba-stylish-strong">
+                            <div class="text-white text-center py-lg-5 py-0 my-0">
+                                <div>
+                                    <h3 class="card-title font-weight-bold pt-2">
+                                        <strong><%= course.title %></strong>
+                                    </h3>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <% }) %>
+                <% header3.forEach(course => { %>
+
+                <div class="news-tile view zoom z-depth-1  mb-4">
+                    <a href="<%= course.path() %>" class="text-white">
+                        <img src="<%= course.thumb %>"
+                            class="img-fluid w-100 " alt="sample image" />
+                        <div class="mask rgba-stylish-strong">
+                            <div class="text-white text-center py-lg-5 py-0 my-0">
+                                <div>
+                                    <h3 class="card-title font-weight-bold pt-2">
+                                        <strong><%= course.title %></strong>
+                                    </h3>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <% }) %>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<section>
+
+    <div class="container">
+
+        
+        <h2 class="text-center h2 my-5 pt-4"> مطالب اخیر</h2>
+        
+        <div class="row text-center mb-2 my-card-row ">
+            <% courses.forEach(course => { %>
+
+            <div class="col-lg-4 col-md-12 mb-4 ml-1 my-card">
+               
+                <div class="view overlay  mb-2">
+                    <img src="<%= course.thumb %>" alt="<%= course.title %>" class="img-fluid w-100">
+                    <a  href="<%= course.path() %>">
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+
+                <h2 class="mb-2 mt-4 font-weight-bold article-title"><a  href="<%= course.path() %>"><%= course.title %></a> </h2>
+
+               
+                <div class="row card-tags">
+
+                    
+                    <div class="col-lg-6 col-md-6 text-lg-right tags ">
+                        <p class="grey-text">
+                           <i class="far fa-calendar-alt"></i> <%= date(course.createdAt).format('jD jMMMM jYYYY') %></p>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6 text-lg-left tags">
+                        <p class="grey-text">
+                            <i class="far fa-clock-o" aria-hidden="true"></i> <%= course.timeline %></p>
+                    </div>
+                    
+
+                </div>
+                <p class="dark-grey-text article-text"><%- course.sum.substr(0,130)%>... </p>
+                <a class="text-uppercase font-small font-weight-bold spacing btn see-btn"
+                    href="<%= course.path() %>">مشاهده <i
+                        class="fad fa-chevron-double-left"></i></a>
+
+            </div>
+            <% }) %>
+
+
+        </div>
+
+        <div  class="see-more text-center">
+            <a  href="/posts" class="btn btn-primary">مطالب بیشتر<i class="fad fa-arrow-left"></i></a>
+        </div>
+
+    </div>
+
+</section>
+

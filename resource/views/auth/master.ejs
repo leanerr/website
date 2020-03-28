@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title><%- defineContent('title') || ' فیتکس'  %></title>
+  <meta name="description"
+    content="اپلیکیشن ورزشی فیتکس تمامی نیاز های علمی و تخصصی شما در مورد تمرینات ورزشی را پشتیبانی میکند. ">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/css/all.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/bootstrap-rtl.min.css" />
+  <link rel="stylesheet" href="/css/owl.carousel.css">
+  <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/css/mdb.min.css">
+  <link rel="stylesheet" href="/css/multi-range.min.css">
+  <link rel="stylesheet" href="/css/vazir.css">
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+
+  <%- style %>
+</head>
+
+<body>
+
+
+
+
+
+  <div class="">
+
+    <%- body %>
+
+  </div>
+
+
+
+  <script src="/public/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/public/css/bootstrap.min.css"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145305000-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145305000-1');
+  </script>
+
+  <%- script %>
+</body>
+
+</html>

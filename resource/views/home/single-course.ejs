@@ -1,0 +1,84 @@
+
+
+<section>
+    <div class="container-fluid">
+        <hr class="my-5">
+        <div class="container">
+            <div class="row mt-5 pt-3">
+
+                <div class="col-lg-8 col-12 mt-1 mx-lg-4">
+
+                    <section class="pb-5 text-lg-left">
+
+                        <div class="row mb-4">
+                            <div class="col-md-12 post-card-content">
+                                <!--<nav aria-label="breadcrumb" class="nav-badcrumb">-->
+                                    <!--<ol class="breadcrumb">-->
+                                        <!--<li class="breadcrumb-item"><a class="black-text" href="#">خانه</a>-->
+                                            <!--<i class="fal fa-chevron-double-left mx-1"></i></li>-->
+                                        <!--<li class="breadcrumb-item"><a class="black-text" href="#">ورزش و تناسب-->
+                                                <!--اندام</a><i class="fal fa-chevron-double-left mx-1"></i>-->
+                                        <!--</li>-->
+                                        <!--<li class="breadcrumb-item"><a class="black-text" href="#">رشته های ورزشی</a>-->
+                                            <!--<i class="fal fa-chevron-double-left mx-1"></i></li>-->
+                                        <!--<li class="breadcrumb-item active"><a>این تاتل شماره یک است</a></li>-->
+                                    <!--</ol>-->
+                                <!--</nav>-->
+                                <div class="mt-3"></div>
+
+                                <h1><strong><%= course.title %></strong></h1>
+                                <hr>
+                                <div class="card ">
+
+
+                                    <div class="view overlay">
+                                        <img src="<%= course.thumb %>" class="img-fluid w-100" alt="">
+                                        <a>
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+
+
+                                    <!-- Post content -->
+                                    <div class="card-body single-post-content">
+                                        <%- course.body %>
+
+
+                                    </div>
+                                    <!--  End Post content -->
+
+                                </div>
+
+                                <div class="single-post-tags text-right">
+                                    <p><i class="fas fa-tags ml-1"></i>برچسب ها: <span><a href=""> <%- course.tags %>
+                                                </a></span>
+                                    </p>
+
+                                </div>
+                                <hr>
+                                <div class="writer-post">
+                                    <div class="row text-center text-md-right">
+                                        <div class="col-md-2 col-12">
+                                            <div class="writer-img mx-auto mx-md-0">
+                                                <img src="/img/fitex.jpg" class="img-fluid w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10 col-12">
+                                            <div class="writer-text">
+                                                <h4> <%- course.author %></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+</section>

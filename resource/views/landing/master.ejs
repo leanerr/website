@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title><%- defineContent('title') || ' فیتکس'  %></title>
+  <meta name="description"
+    content="اپلیکیشن ورزشی فیتکس تمامی نیاز های علمی و تخصصی شما در مورد تمرینات ورزشی را پشتیبانی میکند. ">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../../public/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../../public/css/bootstrap-rtl.min.css" />
+  <link rel="stylesheet" href="/css/vazir.css">
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="stylesheet" href="../../../public/css/owl.carousel.css">
+  <link rel="stylesheet" href="../../../public/css/owl.theme.default.min.css"> -->
+  <link rel="stylesheet" href="/css/all.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/bootstrap-rtl.min.css" />
+  <link rel="stylesheet" href="/css/owl.carousel.css">
+  <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/css/mdb.min.css">
+  <link rel="stylesheet" href="/css/multi-range.min.css">
+  <link rel="stylesheet" href="/css/vazir.css">
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="stylesheet" href="/css/main.css">
+
+
+  <%- style %>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg scrolling-navbar fixed-top navbar-dark info-color" id="nav-bar">
+  <div class="site-title">
+    <a class="navbar-brand" href="/"><img src="/img/fitex.jpg" alt="لوگوی فیتکس">
+    </a>
+
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-nav" aria-controls="my-nav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-align-left"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="my-nav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light" href="/">صفحه اصلی <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          سبک زندگی <i class="fad fa-chevron-down"></i></a>
+        <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item waves-effect waves-light" href="#">انگیزشی</a>
+          <a class="dropdown-item waves-effect waves-light" href="#">عادات روزانه</a>
+          <a class="dropdown-item waves-effect waves-light" href="#">
+            متفرقه</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          ورزش و تناسب اندام <i class="fad fa-chevron-down"></i></a>
+        <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item waves-effect waves-light" href="#">رشته های ورزشی</a>
+          <a class="dropdown-item waves-effect waves-light" href="#">آموزش حرکات ورزشی</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          تغذیه و رژیم غذایی <i class="fad fa-chevron-down"></i></a>
+        <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item waves-effect waves-light" href="#">مکمل شناسی</a>
+          <a class="dropdown-item waves-effect waves-light" href="#">کالری ها</a>
+          <a class="dropdown-item waves-effect waves-light" href="#">رژیم غذایی</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          سلامت فردی <i class="fad fa-chevron-down"></i></a>
+        <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item waves-effect waves-light" href="#">پوست و مو</a>
+          <a class="dropdown-item waves-effect waves-light" href="#">بیماری و آسیب ها</a>
+          <a class="dropdown-item waves-effect waves-light" href="#">زنان و بهداشت فردی</a>
+          <a class="dropdown-item waves-effect waves-light" href="#">داروشناسی</a>
+        </div>
+      </li>
+    </ul>
+   
+  </div>
+</nav>
+
+
+
+
+
+
+  <div class="">
+
+    <%- body %>
+
+  </div>
+
+
+
+  <script src="/public/js/jquery-3.3.1.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/public/css/bootstrap.min.css"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145305000-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145305000-1');
+  </script>
+
+  <%- script %>
+</body>
+
+</html>
