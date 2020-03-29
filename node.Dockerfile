@@ -10,7 +10,6 @@ RUN npm install react-scripts@1.1.1 -g --silent
 COPY . /usr/src/app
 
 EXPOSE 3000
-RUN npm run build
-
+RUN stat server.js
 # start app
 CMD ["npm", "start"]
