@@ -38,7 +38,7 @@ CourseSchema.methods.typeToPersian = function() {
 };
 
 CourseSchema.methods.path = function(){
-    return `/post/${this.slug}`
+    return `https://mag.fitexapp.ir/post/${this.slug}`
 };
 
 module.exports = mongoose.model('Course' , CourseSchema);

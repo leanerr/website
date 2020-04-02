@@ -172,6 +172,12 @@ a.see-btn {
   box-shadow: none;
   background: linear-gradient(-45deg, #2a2d43, #2a2d43, #464b6e);
 }
+
+.last-mag {
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+}
+
 footer.page-footer {
   background: linear-gradient(-45deg, #7b01cc, #07ad52, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -256,5 +262,3 @@ footer.page-footer {
     background-position: 0% 50%;
   }
 }
-
-

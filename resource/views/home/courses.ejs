@@ -3,41 +3,7 @@
 let { search  , order , category } = req.query;
 
 %>
-<!--nav with category-->
-<nav class="navbar navbar-expand-md navbar-dark " style="margin-top: 100px">
-    <div class="container">
-        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#dw" aria-controls="dw" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--<div class="collapse navbar-collapse p-1 " id="dw">-->
-            <!--<ul class="navbar-nav ml-auto mr-auto ">-->
 
-                <!--<% categories.forEach(category => { %>-->
-                <!--<li class="nav-item dropdown m-2 p-1  ">-->
-                    <!--<a class="nav-link dropdown-toggle d-inline badge-dark text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-                        <!--<%= category.name%>-->
-                    <!--</a>-->
-                    <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-                        <!--<% if(category.childs) { %>-->
-                        <!--<ul class="p-1 badge-dark  ">-->
-                            <!--<% category.childs.forEach(cate => { %>-->
-                            <!--<li class="d-block m-1 d-flex justify-content-center">-->
-                                <!--<a class="text-white text-decoration-none  font-weight-normal " href="/post?category=<%= cate.slug %>"><%= cate.name %></a>-->
-                            <!--</li>-->
-                            <!--<% }) %>-->
-                        <!--</ul>-->
-                        <!--<% } %>-->
-                    <!--</div>-->
-                <!--</li>-->
-                <!--<% }) %>-->
-
-
-            <!--</ul>-->
-
-        <!--</div>-->
-    </div>
-
-</nav>
 
 
 <!--search-->
@@ -73,10 +39,7 @@ let { search  , order , category } = req.query;
     </div>
 </section>
 
-<!--end search-->
 
-
-<!--category-->
 <form action="/post" method="GET">
 
     <% if(search) { %>
@@ -113,7 +76,7 @@ let { search  , order , category } = req.query;
 <!--show cards-->
 
 <% if(courses.length) { %>
-<div class="row text-center mb-2 my-card-row justify-content-md-between">
+<div class="row text-center mb-2 my-card-row ">
     <% courses.forEach(course => { %>
 
     <div class="col-lg-4 col-md-12 mb-4 ml-1 my-card">

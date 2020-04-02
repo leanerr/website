@@ -116,6 +116,7 @@ header.jumbotron {
   -webkit-animation: gradient 15s ease infinite;
 }
 
+
 /* New Article Section */
 
 .new-articles-section {
@@ -161,7 +162,7 @@ header.jumbotron {
 @media (min-width: 992px) {
   .my-card-row .col-lg-4 {
     max-width: 32.333333%;
-    margin-left: 5px !important;
+    margin-left: 8px !important;
   }
 
   .my-card .view {
