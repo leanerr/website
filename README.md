@@ -1,2 +1,2 @@
-An online magazine using node.js / server side rendernig / it has admin panel to create , edit or delete posts 
+a small blog and landigpage using node.js / server side rendernig.
 
